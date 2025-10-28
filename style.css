@@ -89,7 +89,7 @@ body {
 }
 
 
-/* 2. Seção Hero*/
+/* 2. Seção Hero (index)*/
 .hero {
     padding: 5rem 0;
 }
@@ -131,7 +131,7 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* Estilo Botão Primário*/
+/* Estilo Botão Primário(index)*/
 .cta-button {
     display: inline-block;
     background-color: var(--cor-acento-amarelo);
@@ -152,9 +152,7 @@ body {
     transform: translateY(-3px);
     box-shadow: 0 5px 10px rgba(248, 195, 0, 0.2);
 }
-
-
-/* 3. Seção Explore */
+/* 3. Seção Explore (index)*/
 
 .explore-section {
     padding: 4rem 0;
@@ -199,8 +197,80 @@ body {
     margin-bottom: 0.5rem;
 }
 
+/* 2. Seção Facts(index)*/
+.facts-section {
+    padding: 4rem 0;
+    background-color: var(--cor-fundo-card);
+}
 
-/* 4. PÁGINAS INTERNAS */
+.facts-section h2 {
+    font-family: var(--fonte-titulo);
+    font-size: 2.2rem;
+    text-align: center;
+    color: var(--cor-texto-principal);
+    margin-bottom: 3rem;
+}
+
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.fact-card {
+    background-color: var(--cor-fundo);
+    padding: 2rem;
+    border-radius: 12px;
+    border-left: 5px solid var(--cor-acento-verde);
+}
+
+.fact-card h4 {
+    font-family: var(--fonte-titulo);
+    font-size: 1.3rem;
+    color: var(--cor-acento-amarelo);
+    margin-bottom: 0.75rem;
+}
+
+/* 4. Seção legacy(index)*/
+.legacy-section {
+    padding: 5rem 0;
+}
+
+.legacy-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.legacy-image {
+    flex: 1;
+}
+
+.legacy-image img {
+    width: 100%;
+    border-radius: 12px;
+    height: 300px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.legacy-text {
+    flex: 1.2;
+}
+
+.legacy-text h2 {
+    font-family: var(--fonte-titulo);
+    font-size: 2.2rem;
+    color: var(--cor-texto-principal);
+    margin-bottom: 1.5rem;
+}
+
+.legacy-text p {
+    font-size: 1.05rem;
+    margin-bottom: 2rem;
+}
+
+
+/* 4. PÁGINAS EXTERNAS */
 
 
 .page-header {
@@ -223,7 +293,7 @@ body {
 }
 
 
-/* 5. História */
+/* 5. PAG.História */
 
 .timeline-section h3 {
     font-family: var(--fonte-titulo);
@@ -314,7 +384,7 @@ body {
 }
 
 
-/* 6. personagens  */
+/* 6. PAG.Personagens  */
 
 .characters-grid {
     display: grid;
@@ -380,7 +450,7 @@ body {
 }
 
 
-/* 7. Documentos */
+/* 7. PAG.Documentos */
 
 .document-item {
     display: flex;
@@ -439,7 +509,7 @@ body {
 }
 
 
-/* 8. Galeria */
+/* 8. PAG.Galeria */
 
 .gallery-grid {
     display: grid;
@@ -497,7 +567,7 @@ body {
     opacity: 1;
 }
 
-/* 9. Contato */
+/* 9. PAG.Contato */
 
 .contact-wrapper {
     display: flex;
@@ -612,10 +682,11 @@ footer {
 @media (max-width: 900px) {
     .explore-grid {
         grid-template-columns: repeat(2, 1fr);
-        
+
     }
-      .facts-grid {
-        grid-template-columns: 1fr; 
+
+    .facts-grid {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -623,8 +694,9 @@ footer {
     .navbar .container {
         flex-direction: column;
     }
-     .legacy-wrapper {
-        flex-direction: column; 
+
+    .legacy-wrapper {
+        flex-direction: column;
     }
 
     .navbar nav ul {
@@ -678,86 +750,3 @@ footer {
         flex-direction: column-reverse;
     }
 }
-
-
-
-
-/* customizações */
-
-/* PÁGINA INICIAL */
-
-.facts-section {
-    padding: 4rem 0;
-    background-color: var(--cor-fundo-card); 
-}
-
-.facts-section h2 {
-    font-family: var(--fonte-titulo);
-    font-size: 2.2rem;
-    text-align: center;
-    color: var(--cor-texto-principal);
-    margin-bottom: 3rem;
-}
-
-.facts-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-}
-
-.fact-card {
-    background-color: var(--cor-fundo); 
-    padding: 2rem;
-    border-radius: 12px;
-    border-left: 5px solid var(--cor-acento-verde); 
-}
-
-.fact-card h4 {
-    font-family: var(--fonte-titulo);
-    font-size: 1.3rem;
-    color: var(--cor-acento-amarelo); 
-    margin-bottom: 0.75rem;
-}
-
-
-.legacy-section {
-    padding: 5rem 0;
-}
-
-.legacy-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-}
-
-.legacy-image {
-    flex: 1;
-}
-
-.legacy-image img {
-    width: 100%;
-    border-radius: 12px;
-    height: 300px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-}
-
-.legacy-text {
-    flex: 1.2; 
-}
-
-.legacy-text h2 {
-    font-family: var(--fonte-titulo);
-    font-size: 2.2rem;
-    color: var(--cor-texto-principal);
-    margin-bottom: 1.5rem;
-}
-
-.legacy-text p {
-    font-size: 1.05rem;
-    margin-bottom: 2rem;
-}
-
-
-
-
-
