@@ -1,22 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Personagens - Proclamação da República</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <div class = "headerButtonContainer">
-            <a href="contato.html""><button class = "headerButton">Contato</button></a>
-            <a href="galeria.html""><button class = "headerButton">Galeria</button></a>
-            <a href="documentos.html""><button class = "headerButton">Documentos</button></a>
-            <a href="personagens.html""><button class = "headerButton">Personagens</button></a>
-            <a href="historia.html"><button class = "headerButton"">História</button></a>
-            <a href="index.html"><button class = "headerButton">Main</button></a>
+
+    <header class="navbar">
+        <div class="container">
+            <h1 class="navbar-brand">Proclamação da República</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="historia.html">História</a></li>
+                    <li><a href="personagens.html">Personagens</a></li>
+                    <li><a href="documentos.html">Documentos</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>Personagens Marcantes</h2>
+                <p>Biografias de figuras importantes na transição do Império para a República.</p>
+            </div>
+        </section>
+
+        <section class="characters-section">
+            <div class="container">
+                <div class="characters-grid">
+
+                    <div class="character-card">
+                        <img src="deodoro.jpg" alt="Marechal Deodoro da Fonseca">
+                        <div class="card-content">
+                            <h4>Marechal Deodoro da Fonseca</h4>
+                            <p>Líder militar do golpe que proclamou a República, tornando-se o primeiro presidente do
+                                Brasil.</p>
+                            <a href="#" class="card-link">Saiba Mais</a>
+                        </div>
+                    </div>
+
+                    <div class="character-card">
+                        <img src="benjamin.jpg" alt="Benjamin Constant">
+                        <div class="card-content">
+                            <h4>Benjamin Constant</h4>
+                            <p>Militar e professor, foi um dos principais articuladores do movimento republicano e
+                                influenciador das ideias positivistas.</p>
+                            <a href="#" class="card-link">Saiba Mais</a>
+                        </div>
+                    </div>
+
+                    <div class="character-card">
+                        <img src="floriano.jpg" alt="Floriano Peixoto">
+                        <div class="card-content">
+                            <h4>Floriano Peixoto</h4>
+                            <p>Militar e segundo presidente do Brasil, conhecido como "Marechal de Ferro" por sua
+                                atuação na consolidação da República.</p>
+                            <a href="#" class="card-link">Saiba Mais</a>
+                        </div>
+                    </div>
+
+                    <div class="character-card">
+                        <img src="quintino.jpg" alt="Quintino Bocaiúva">
+                        <div class="card-content">
+                            <h4>Quintino Bocaiúva</h4>
+                            <p>Jornalista e político, foi uma figura civil de destaque no movimento republicano e membro
+                                do governo provisório.</p>
+                            <a href="#" class="card-link">Saiba Mais</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Proclamação da República. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
 </body>
+
 </html>

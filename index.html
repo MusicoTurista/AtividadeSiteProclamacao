@@ -1,22 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Proclamação da República: Um Novo Capítulo para o Brasil</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <header>
-        <div class = "headerButtonContainer">
-            <a href="contato.html""><button class = "headerButton">Contato</button></a>
-            <a href="galeria.html""><button class = "headerButton">Galeria</button></a>
-            <a href="documentos.html""><button class = "headerButton">Documentos</button></a>
-            <a href="personagens.html""><button class = "headerButton">Personagens</button></a>
-            <a href="historia.html"><button class = "headerButton">História</button></a>
-            <a href="index.html"><button class = "headerButton">Main</button></a>
+
+    <header class="navbar">
+        <div class="container">
+            <h1 class="navbar-brand">Proclamação da República</h1>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Início</a></li>
+                    <li><a href="./historia.html">História</a></li>
+                    <li><a href="./personagens.html">Personagens</a></li>
+                    <li><a href="./documentos.html">Documentos</a></li>
+                    <li><a href="./galeria.html">Galeria</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <h1>Proclamação da República: Um Novo Capítulo para o Brasil</h1>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-text">
+                    <h2>Um Novo Capítulo para o Brasil</h2>
+                    <p>Introdução à importância da Proclamação da República, destacando seu papel na construção da
+                        democracia brasileira.</p>
+
+                    <a href="./historia.html" class="cta-button">Explore a História</a>
+                </div>
+                <div class="hero-image">
+                    <img src="./assets/img/imgProclamação.png"
+                        alt="Representação do Marechal Deodoro da Fonseca proclamando a República em 15 de novembro de 1889.">
+                </div>
+            </div>
+        </section>
+
+        <section class="explore-section">
+            <div class="container">
+                <h2>Explore Nossas Seções</h2>
+                <div class="explore-grid">
+
+                    <a href="./historia.html" class="explore-card">
+                        <h3>História</h3>
+                        <p>Navegue pela linha do tempo e entenda o contexto e os eventos que levaram ao fim do Império.
+                        </p>
+                    </a>
+
+                    <a href="./personagens.html" class="explore-card">
+                        <h3>Personagens</h3>
+                        <p>Conheça as figuras-chave, militares e civis, que foram cruciais para o movimento republicano.
+                        </p>
+                    </a>
+
+                    <a href="./galeria.html" class="explore-card">
+                        <h3>Galeria</h3>
+                        <p>Veja pinturas, fotos e documentos históricos que retratam vividamente a época da Proclamação.
+                        </p>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+        <section class="facts-section">
+            <div class="container">
+                <h2>Fatos de Destaque</h2>
+                <div class="facts-grid">
+
+                    <div class="fact-card">
+                        <h4>Fim da Monarquia</h4>
+                        <p>A proclamação encerrou 67 anos de regime monárquico no Brasil, exilando D. Pedro II e a
+                            família real.</p>
+                    </div>
+
+                    <div class="fact-card">
+                        <h4>Início do Federalismo</h4>
+                        <p>O novo regime deu mais autonomia às antigas províncias, que se tornaram "estados", similar ao
+                            modelo dos EUA.</p>
+                    </div>
+
+                    <div class="fact-card">
+                        <h4>Deodoro, o 1º Presidente</h4>
+                        <p>O Marechal Deodoro da Fonseca, líder do golpe militar, foi nomeado Chefe do Governo
+                            Provisório e depois o 1º Presidente.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="legacy-section">
+            <div class="container">
+                <div class="legacy-wrapper">
+
+                    <div class="legacy-image">
+                        <img src="./assets/img/imgBandeiraRepublicaBrasil.png"
+                            alt="Bandeira provisória da República do Brasil">
+                    </div>
+
+                    <div class="legacy-text">
+                        <h2>O Legado da Proclamação</h2>
+                        <p>A Proclamação da República não foi apenas uma troca de governo; foi o início da construção de
+                            um novo ideal de nação. Embora os primeiros anos tenham sido marcados pela instabilidade e
+                            pelo poder militar (República da Espada), o evento lançou as bases para o sistema
+                            democrático, a separação entre Igreja e Estado e o federalismo que definem o Brasil até
+                            hoje.</p>
+                        <a href="./historia.html" class="cta-button">Saiba mais sobre as consequências</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Proclamação da República. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
 </body>
+
 </html>

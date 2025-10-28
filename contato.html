@@ -1,22 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contato - Proclamação da República</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <div class = "headerButtonContainer">
-            <a href="contato.html""><button class = "headerButton">Contato</button></a>
-            <a href="galeria.html""><button class = "headerButton">Galeria</button></a>
-            <a href="documentos.html""><button class = "headerButton">Documentos</button></a>
-            <a href="personagens.html""><button class = "headerButton">Personagens</button></a>
-            <a href="historia.html"><button class = "headerButton"">História</button></a>
-            <a href="index.html"><button class = "headerButton">Main</button></a>
+
+    <header class="navbar">
+        <div class="container">
+            <h1 class="navbar-brand">Proclamação da República</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="historia.html">História</a></li>
+                    <li><a href="personagens.html">Personagens</a></li>
+                    <li><a href="documentos.html">Documentos</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>Fale Conosco</h2>
+                <p>Envie suas dúvidas, sugestões ou informações adicionais.</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-wrapper">
+
+                    <div class="contact-form">
+                        <h3>Formulário de Contato</h3>
+                        <form action="#_submit" method="POST">
+                            <div class="form-group">
+                                <label for="nome">Nome Completo</label>
+                                <input type="text" id="nome" name="nome" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="assunto">Assunto</label>
+                                <input type="text" id="assunto" name="assunto" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem</label>
+                                <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Enviar Mensagem</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info">
+                        <h3>Nossos Canais</h3>
+                        <p>Acompanhe o projeto e entre em contato através de nossas redes sociais institucionais.</p>
+
+                        <div class="social-links">
+                            <a href="#" class="social-link" target="_blank">Instagram</a>
+                            <a href="#" class="social-link" target="_blank">Facebook</a>
+                            <a href="#" class="social-link" target="_blank">Twitter / X</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Proclamação da República. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
 </body>
+
 </html>
